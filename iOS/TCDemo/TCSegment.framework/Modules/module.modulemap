@@ -1,0 +1,6 @@
+framework module TCSegment {
+  umbrella header "TCSegment.h"
+
+  export *
+  module * { export * }
+}
