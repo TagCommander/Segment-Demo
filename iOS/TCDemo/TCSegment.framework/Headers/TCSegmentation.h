@@ -16,6 +16,7 @@ SINGLETON_CLASS_H(TCSegmentation)
 
 - (void) setSiteID: (int) siteID andToken: (NSString *) token;
 - (void) fetchSegment;
+- (NSArray *) getSegments;
 
 @property (nonatomic, assign) int siteID;
 @property (nonatomic, retain) NSString *IDFA;

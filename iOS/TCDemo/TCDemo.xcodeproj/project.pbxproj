@@ -43,6 +43,7 @@
 		782D3AF1E8A2FFDAB989556E /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D3F0B7873520D323C11D0 /* TCAppDelegate.m */; };
 		90BC899A1DD0BD940007C151 /* TCSegment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCF1DD086710076E19B /* TCSegment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90BC899D1DD0BD990007C151 /* TCCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCD1DD0864E0076E19B /* TCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90BC89AD1DD48B1A0007C151 /* TCAskSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */; };
 		90D71AF21DC78A13005F6FBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D71AF11DC78A13005F6FBB /* UIKit.framework */; };
 		90D71AF41DC78A83005F6FBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D71AF31DC78A83005F6FBB /* CoreLocation.framework */; };
 		90D71AF61DC78ACF005F6FBB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D71AF51DC78ACF005F6FBB /* MapKit.framework */; };
@@ -111,6 +112,8 @@
 		6DE37838174679EB00BECE65 /* TCUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUITabBarController.m; sourceTree = "<group>"; };
 		782D3BBCF2A4CD5FD6BE150F /* TCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		782D3F0B7873520D323C11D0 /* TCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		90BC89AB1DD48B1A0007C151 /* TCAskSegmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAskSegmentation.h; sourceTree = "<group>"; };
+		90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAskSegmentation.m; sourceTree = "<group>"; };
 		90D71AF11DC78A13005F6FBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		90D71AF31DC78A83005F6FBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		90D71AF51DC78ACF005F6FBB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -218,6 +221,8 @@
 				6DE37838174679EB00BECE65 /* TCUITabBarController.m */,
 				782D3F0B7873520D323C11D0 /* TCAppDelegate.m */,
 				782D3BBCF2A4CD5FD6BE150F /* TCAppDelegate.h */,
+				90BC89AB1DD48B1A0007C151 /* TCAskSegmentation.h */,
+				90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */,
 			);
 			path = TCDemo;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				6D44354517180E4C00867B6F /* TCLocationModel.m in Sources */,
 				6D44354617180E4C00867B6F /* TCRestaurantListViewController.m in Sources */,
 				6D44354817180E4C00867B6F /* TCRestaurantDetailViewController.m in Sources */,
+				90BC89AD1DD48B1A0007C151 /* TCAskSegmentation.m in Sources */,
 				6DE37839174679EB00BECE65 /* TCUITabBarController.m in Sources */,
 				6D44354917180E4C00867B6F /* TCMapViewController.m in Sources */,
 				6D4434C51718055000867B6F /* main.m in Sources */,

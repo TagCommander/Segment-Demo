@@ -10,10 +10,6 @@
     [TCDebug setDebugLevel: TCLogLevel_Verbose];
     [TCDebug setNotificationLog: YES];
 
-    _segmentation = [TCSegmentation sharedInstance];
-    [self.segmentation setSiteID: 3311 andToken: kTCS_token];
-    [self.segmentation fetchSegment];
-
     return YES;
 }
 
