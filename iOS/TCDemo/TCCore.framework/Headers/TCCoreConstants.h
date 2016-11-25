@@ -11,6 +11,9 @@
 
 #import <Foundation/Foundation.h>
 
+#define TC_UNIT_TESTS
+#define TC_FUNCTIONAL_TESTS
+
 #pragma mark - misc
 extern NSString *const kTCFileOfflineHits;
 extern NSTimeInterval const kTCNetworkDefaultTimeout;

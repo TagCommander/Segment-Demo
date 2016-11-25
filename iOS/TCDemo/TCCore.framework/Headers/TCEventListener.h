@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TCCoreConstants.h"
 #import "ITCEventListenerDelegate.h"
 
 @interface TCEventListener : NSObject
 
-- (void) listen:(NSString *)listenedNotificationName;
+- (void) listen: (NSString *) listenedNotificationName;
 - (void) onNotification: (NSNotification *) incomingNotification;
 
 @property (nonatomic, assign) id<ITCEventListenerDelegate> parent;
