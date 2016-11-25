@@ -3,9 +3,6 @@ package com.tagcommander.tcdemo.tcdemo;
 import android.Manifest;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,13 +11,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
-
-import com.tagcommander.lib.core.TCCoreConstants;
-import com.tagcommander.lib.segment.TCSegment;
 
 /*
  * The purpose of TCDemo is to show you how to tag easily an Android application
@@ -141,19 +134,25 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         {
             // getItem is called to instantiate the fragment for the given page.
             Fragment fragment;
+
             if (position == 1)
             {
                 fragment = new MapFragment();
             }
-            else
+            else if (position == 0)
             {
                 fragment = new RestaurantListFragment();
             }
+            else
+            {
+                fragment = new SegmentFragment();
+            }
+
             return fragment;
         }
 
         @Override
-        public int getCount() { return 2; }
+        public int getCount() { return 3; }
 
         @Override
         public CharSequence getPageTitle(int position)
@@ -165,6 +164,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 case 1:
                     return getString(R.string.title_map);
                 case 2:
+                    return getString(R.string.title_segment);
+                case 3:
                     return getString(R.string.title_settings);
             }
             return null;

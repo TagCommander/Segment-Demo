@@ -24,7 +24,6 @@ public class SegmentExample extends BroadcastReceiver
         broadcastManager.registerReceiver(this, new IntentFilter(TCCoreConstants.kTCNotification_SegmentResponse));
     }
 
-
     @Override
     public void onReceive(Context context, Intent intent)
     {

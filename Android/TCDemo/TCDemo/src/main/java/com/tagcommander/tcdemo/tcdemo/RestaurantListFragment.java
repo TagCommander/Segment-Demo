@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tagcommander.tcdemo.tcdemo;
 
 import android.app.Activity;
@@ -13,10 +10,6 @@ import android.widget.ListView;
 
 import com.tagcommander.tcdemo.data.Restaurants;
 
-/**
- * @author damien
- *
- */
 public class RestaurantListFragment extends ListFragment
 {
     @Override
