@@ -3,6 +3,9 @@ package com.tagcommander.tcdemo.tcdemo;
 import android.Manifest;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,9 +14,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
+
+import com.tagcommander.lib.core.TCCoreConstants;
+import com.tagcommander.lib.segment.TCSegment;
 
 /*
  * The purpose of TCDemo is to show you how to tag easily an Android application
@@ -66,6 +73,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 actionBar.setSelectedNavigationItem(position);
             }
         });
+
+        new SegmentExample().initializeSegmentation(this.getApplicationContext());
 
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
 
