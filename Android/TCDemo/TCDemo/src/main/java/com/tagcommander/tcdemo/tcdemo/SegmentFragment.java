@@ -6,11 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.tagcommander.lib.segment.TCSegment;
-
-public class SegmentFragment extends Fragment implements View.OnClickListener
+public class SegmentFragment extends Fragment
 {
+    TextView segmentList;
+
     public SegmentFragment()
     {
         // Required empty public constructor
@@ -26,7 +27,9 @@ public class SegmentFragment extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_segment, container, false);
+        View view = inflater.inflate(R.layout.fragment_segment, container, false);
+        segmentList = (TextView) view.findViewById(R.id.segment_text);
+        return view;
     }
 
     @Override
@@ -41,9 +44,8 @@ public class SegmentFragment extends Fragment implements View.OnClickListener
         super.onDetach();
     }
 
-    @Override
-    public void onClick(View view)
+    public void displaySegment(String text)
     {
-        TCSegment.getInstance().fetchSegments();
+        segmentList.setText(text);
     }
 }

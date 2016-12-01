@@ -14,21 +14,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 
-/*
- * The purpose of TCDemo is to show you how to tag easily an Android application
- *
- * The first thing we need to do is initialize the TagCommander's SDK
- * this is done in the onCreate here with initTagCommander which contain further explanations
- *
- * Then you need to create the function that will give your tags the
- * necessary parameters to send the HITs properly
- * Some example of those function can be found in TagManager.java
- *
- * Those functions will be called throughout your application when needed
- * Again this application was design to show common usage
- * so you will find some of those functions called in TCDemo
- */
+import com.tagcommander.lib.segment.TCSegment;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener
 {
@@ -36,6 +24,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     ViewPager mViewPager;
     Double latitude = 0.0;
     Double longitude = 0.0;
+    SegmentFragment segmentFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -67,7 +56,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             }
         });
 
-        new SegmentExample().initializeSegmentation(this.getApplicationContext());
+        new SegmentExample().initializeSegmentation(this);
 
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
 
@@ -145,7 +134,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             }
             else
             {
-                fragment = new SegmentFragment();
+                segmentFragment = new SegmentFragment();
+                fragment = segmentFragment;
             }
 
             return fragment;
@@ -222,5 +212,24 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             // other 'case' lines to check for other
             // permissions this app might request
         }
+    }
+
+    /**
+     * Send the content of the kTCNotification_SegmentAvailable notification containing the
+     * segment fetched to the Segment fragment to display them.
+     * @param segment the fragment list as a string.
+     */
+    public void printSegment(String segment)
+    {
+        segmentFragment.displaySegment(segment);
+    }
+
+    /**
+     * Button callback method to fetch segments
+     * @param view useless param.
+     */
+    public void fetchSegments(View view)
+    {
+        TCSegment.getInstance().fetchSegments();
     }
 }

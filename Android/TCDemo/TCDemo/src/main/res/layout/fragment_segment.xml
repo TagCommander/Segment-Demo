@@ -8,13 +8,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="107dp"
-        android:text="@string/no_segment"/>
+        android:text="@string/no_segment"
+        android:id="@+id/segment_text"/>
 
     <Button
         android:text="Fetch Segments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fetchSegments"
-        android:onClick="onClick"/>
+        android:onClick="fetchSegments"
+        />
 
 </LinearLayout>

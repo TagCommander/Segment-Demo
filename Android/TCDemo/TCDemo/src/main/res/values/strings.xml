@@ -10,6 +10,6 @@
     <string name="title_activity_restaurant_detail">RestaurantDetail</string>
 
     <string name="no_segment">No segment found yet.</string>
-    <string name="segment_list">User segment's : </string>
+    <string name="segment_list">User segment\'s : </string>
 
 </resources>
