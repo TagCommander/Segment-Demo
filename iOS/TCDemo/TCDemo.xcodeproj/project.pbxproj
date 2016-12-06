@@ -28,6 +28,7 @@
 		21AABDB1E5A9FD69CCCF98B0 /* bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 21AAB5606AE24C22F58574A8 /* bookmark.png */; };
 		21AABDC80C4380E143F733D3 /* push-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 21AAB04DC492B7A16D54D92A /* push-pin.png */; };
 		21AABFFC8351E2F5B9B246D3 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 21AAB366E93052032113D9B2 /* pin.png */; };
+		3011F0491C752FD0A37BE49B /* Pods_TCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F47076CEA9F7DAF1FBCB38 /* Pods_TCDemo.framework */; };
 		6D02973617297F95002F4B08 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D02973517297F95002F4B08 /* restaurants.json */; };
 		6D0365A1172AD18500C56829 /* TCRestaurants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0365A0172AD18500C56829 /* TCRestaurants.m */; };
 		6D2D88B21AE7CD7100ED73C4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2D88B41AE7CD7100ED73C4 /* MainStoryboard_iPhone.storyboard */; };
@@ -44,11 +45,7 @@
 		9065FD671DE75850006F79C3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9065FD661DE75850006F79C3 /* CoreLocation.framework */; };
 		9065FD691DE7585D006F79C3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9065FD681DE7585D006F79C3 /* MapKit.framework */; };
 		9065FD6B1DE75867006F79C3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9065FD6A1DE75867006F79C3 /* libz.tbd */; };
-		90BC899A1DD0BD940007C151 /* TCSegment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCF1DD086710076E19B /* TCSegment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		90BC899D1DD0BD990007C151 /* TCCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCD1DD0864E0076E19B /* TCCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90BC89AD1DD48B1A0007C151 /* TCAskSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */; };
-		90FAACCE1DD0864E0076E19B /* TCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCD1DD0864E0076E19B /* TCCore.framework */; };
-		90FAACD01DD086710076E19B /* TCSegment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FAACCF1DD086710076E19B /* TCSegment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,8 +55,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				90BC899D1DD0BD990007C151 /* TCCore.framework in Embed Frameworks */,
-				90BC899A1DD0BD940007C151 /* TCSegment.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		075CDBCC2E898FE3545555F6 /* Pods-TCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		21AAB04DC492B7A16D54D92A /* push-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "push-pin.png"; path = "TCDemo/Ressources/Icons/push-pin.png"; sourceTree = "<group>"; };
 		21AAB0C8CAE82344D08CB90D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "TCDemo/Ressources/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		21AAB1D25A112B852249DFF8 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flag.png; path = TCDemo/Ressources/Icons/flag.png; sourceTree = "<group>"; };
@@ -106,7 +102,6 @@
 		6D44350A1718069C00867B6F /* TCMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCMapViewController.h; sourceTree = "<group>"; };
 		6D44350B1718069C00867B6F /* TCMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMapViewController.m; sourceTree = "<group>"; };
 		6D44350C1718076F00867B6F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		6DA0F29417B0145D0036EE35 /* TCDemo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = TCDemo.xcconfig; path = xcconfigs/TCDemo.xcconfig; sourceTree = "<group>"; };
 		6DE37837174679EB00BECE65 /* TCUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUITabBarController.h; sourceTree = "<group>"; };
 		6DE37838174679EB00BECE65 /* TCUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUITabBarController.m; sourceTree = "<group>"; };
 		782D3BBCF2A4CD5FD6BE150F /* TCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
@@ -117,8 +112,8 @@
 		9065FD6A1DE75867006F79C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		90BC89AB1DD48B1A0007C151 /* TCAskSegmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAskSegmentation.h; sourceTree = "<group>"; };
 		90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAskSegmentation.m; sourceTree = "<group>"; };
-		90FAACCD1DD0864E0076E19B /* TCCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TCCore.framework; sourceTree = "<group>"; };
-		90FAACCF1DD086710076E19B /* TCSegment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TCSegment.framework; sourceTree = "<group>"; };
+		9FE8AE406493C3FA85C98268 /* Pods-TCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F5F47076CEA9F7DAF1FBCB38 /* Pods_TCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +125,7 @@
 				9065FD691DE7585D006F79C3 /* MapKit.framework in Frameworks */,
 				9065FD671DE75850006F79C3 /* CoreLocation.framework in Frameworks */,
 				9065FD651DE757B9006F79C3 /* UIKit.framework in Frameworks */,
-				90FAACD01DD086710076E19B /* TCSegment.framework in Frameworks */,
-				90FAACCE1DD0864E0076E19B /* TCCore.framework in Frameworks */,
+				3011F0491C752FD0A37BE49B /* Pods_TCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +187,7 @@
 				6D21466B172807E600687788 /* Scripts */,
 				6DA0F29317B014330036EE35 /* XCConfigs */,
 				6D4434B61718055000867B6F /* Products */,
+				7A38C4AE55FB4E4AE7957984 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,7 +244,6 @@
 		6DA0F29317B014330036EE35 /* XCConfigs */ = {
 			isa = PBXGroup;
 			children = (
-				6DA0F29417B0145D0036EE35 /* TCDemo.xcconfig */,
 			);
 			name = XCConfigs;
 			sourceTree = "<group>";
@@ -261,11 +255,19 @@
 				9065FD681DE7585D006F79C3 /* MapKit.framework */,
 				9065FD661DE75850006F79C3 /* CoreLocation.framework */,
 				9065FD641DE757B9006F79C3 /* UIKit.framework */,
-				90FAACCF1DD086710076E19B /* TCSegment.framework */,
-				90FAACCD1DD0864E0076E19B /* TCCore.framework */,
 				21AAB7A76F9155BD43FD68D4 /* Icons */,
+				F5F47076CEA9F7DAF1FBCB38 /* Pods_TCDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A38C4AE55FB4E4AE7957984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				075CDBCC2E898FE3545555F6 /* Pods-TCDemo.debug.xcconfig */,
+				9FE8AE406493C3FA85C98268 /* Pods-TCDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,10 +277,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D4434D21718055000867B6F /* Build configuration list for PBXNativeTarget "TCDemo" */;
 			buildPhases = (
+				A8274C770299E85C7DAC9C2C /* 📦 Check Pods Manifest.lock */,
 				6D4434B11718055000867B6F /* Sources */,
 				6D4434B21718055000867B6F /* Frameworks */,
 				6D4434B31718055000867B6F /* Resources */,
 				90BC899B1DD0BD940007C151 /* Embed Frameworks */,
+				B58CEE569D7BB33BDFB85B58 /* 📦 Embed Pods Frameworks */,
+				B278EAC524BEC9F6EA2762FF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,6 +369,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8274C770299E85C7DAC9C2C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B278EAC524BEC9F6EA2762FF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58CEE569D7BB33BDFB85B58 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D4434B11718055000867B6F /* Sources */ = {
@@ -493,7 +546,7 @@
 		};
 		6D4434D31718055000867B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DA0F29417B0145D0036EE35 /* TCDemo.xcconfig */;
+			baseConfigurationReference = 075CDBCC2E898FE3545555F6 /* Pods-TCDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -508,13 +561,14 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tagcommander.test.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = TCDemo;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		6D4434D41718055000867B6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DA0F29417B0145D0036EE35 /* TCDemo.xcconfig */;
+			baseConfigurationReference = 9FE8AE406493C3FA85C98268 /* Pods-TCDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -529,6 +583,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tagcommander.test.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = TCDemo;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

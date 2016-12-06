@@ -1,0 +1,5 @@
+use_frameworks!
+target 'TCDemo' do
+    pod 'TCCore', podspec: 'https://raw.githubusercontent.com/TagCommander/pods/master/TCCore/latest-debug-universal.podspec'
+    pod 'TCSegment', podspec: 'https://raw.githubusercontent.com/TagCommander/pods/master/TCSegment/latest-debug-universal.podspec'
+end

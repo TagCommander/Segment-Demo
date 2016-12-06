@@ -9,6 +9,7 @@
 {
     [TCDebug setDebugLevel: TCLogLevel_Verbose];
     [TCDebug setNotificationLog: YES];
+    [[TCSegmentation sharedInstance] setSiteID: 3311 andToken: kTCS_token];
 
     return YES;
 }

@@ -1,0 +1,21 @@
+PODS:
+  - TCCore (4.0.0)
+  - TCSegment (4.0.0)
+
+DEPENDENCIES:
+  - TCCore (from `https://raw.githubusercontent.com/TagCommander/pods/master/TCCore/latest-debug-universal.podspec`)
+  - TCSegment (from `https://raw.githubusercontent.com/TagCommander/pods/master/TCSegment/latest-debug-universal.podspec`)
+
+EXTERNAL SOURCES:
+  TCCore:
+    :podspec: https://raw.githubusercontent.com/TagCommander/pods/master/TCCore/latest-debug-universal.podspec
+  TCSegment:
+    :podspec: https://raw.githubusercontent.com/TagCommander/pods/master/TCSegment/latest-debug-universal.podspec
+
+SPEC CHECKSUMS:
+  TCCore: b1cb3a62dda4aeb7799922f9fcb6b4a1dffe0cbd
+  TCSegment: 1632160fb9200a8682571968421e8f0bd4a541b2
+
+PODFILE CHECKSUM: 6b56ee3a01b41eadfc733acf82a68a3c6f13a52b
+
+COCOAPODS: 1.0.0

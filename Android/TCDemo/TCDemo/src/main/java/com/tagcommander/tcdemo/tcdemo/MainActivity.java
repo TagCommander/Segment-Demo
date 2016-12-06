@@ -18,6 +18,8 @@ import android.view.View;
 
 import com.tagcommander.lib.segment.TCSegment;
 
+import java.util.List;
+
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener
 {
     SectionsPagerAdapter mSectionsPagerAdapter;

@@ -1,0 +1,19 @@
+{
+  "name": "TCCore",
+  "version": "4.0.0",
+  "homepage": "https://github.com/tagcommander/pods/TCCore",
+  "authors": {
+    "TagCommander": "support@tagcommander.com"
+  },
+  "summary": "TagCommander pod",
+  "description": "Go to https://github.com/TagCommander/pods/TCCore for more details",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "http": "https://github.com/TagCommander/pods/raw/master/TCCore/Debug-universal/4.0.0.zip"
+  },
+  "preserve_paths": "TCCore.framework",
+  "public_header_files": "TCCore.framework/Headers/*.h",
+  "vendored_frameworks": "TCCore.framework"
+}
