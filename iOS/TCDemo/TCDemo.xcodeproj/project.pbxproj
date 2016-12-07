@@ -46,6 +46,7 @@
 		9065FD691DE7585D006F79C3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9065FD681DE7585D006F79C3 /* MapKit.framework */; };
 		9065FD6B1DE75867006F79C3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9065FD6A1DE75867006F79C3 /* libz.tbd */; };
 		90BC89AD1DD48B1A0007C151 /* TCAskSegmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */; };
+		90E9A2481DF725E700DE33CA /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 90E9A2471DF725E700DE33CA /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +113,7 @@
 		9065FD6A1DE75867006F79C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		90BC89AB1DD48B1A0007C151 /* TCAskSegmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAskSegmentation.h; sourceTree = "<group>"; };
 		90BC89AC1DD48B1A0007C151 /* TCAskSegmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAskSegmentation.m; sourceTree = "<group>"; };
+		90E9A2471DF725E700DE33CA /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = xcconfigs/Config.xcconfig; sourceTree = "<group>"; };
 		9FE8AE406493C3FA85C98268 /* Pods-TCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F5F47076CEA9F7DAF1FBCB38 /* Pods_TCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -244,6 +246,7 @@
 		6DA0F29317B014330036EE35 /* XCConfigs */ = {
 			isa = PBXGroup;
 			children = (
+				90E9A2471DF725E700DE33CA /* Config.xcconfig */,
 			);
 			name = XCConfigs;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				21AAB1678D74BE88CA8E6D52 /* Icon.png in Resources */,
 				21AAB7D3609A6B7875D12270 /* Icon@2x.png in Resources */,
 				21AAB786A74780DEED05A34F /* iTunesArtwork in Resources */,
+				90E9A2481DF725E700DE33CA /* Config.xcconfig in Resources */,
 				21AABD0F7FA50A723C208056 /* iTunesArtwork@2x in Resources */,
 				21AABFFC8351E2F5B9B246D3 /* pin.png in Resources */,
 				21AAB73539D3CBBFD4718240 /* processing-02.png in Resources */,
@@ -546,7 +550,7 @@
 		};
 		6D4434D31718055000867B6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 075CDBCC2E898FE3545555F6 /* Pods-TCDemo.debug.xcconfig */;
+			baseConfigurationReference = 90E9A2471DF725E700DE33CA /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -568,7 +572,7 @@
 		};
 		6D4434D41718055000867B6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FE8AE406493C3FA85C98268 /* Pods-TCDemo.release.xcconfig */;
+			baseConfigurationReference = 90E9A2471DF725E700DE33CA /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

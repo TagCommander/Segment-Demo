@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  TCDemo
+//
+//  Created by JeanJulien on 06/12/2016.
+//  Copyright © 2016 Damien TERRIER. All rights reserved.
+//
+#include "../Pods/Target Support Files/Pods-TCDemo/Pods-TCDemo.release.xcconfig"
+
+ENABLE_BITCODE = NO
+INFOPLIST_FILE = TCDemo/TCDemo-Info.plist

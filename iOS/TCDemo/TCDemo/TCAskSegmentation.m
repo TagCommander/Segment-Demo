@@ -1,7 +1,6 @@
 #import "TCAskSegmentation.h"
 #import <TCSegment/TCSegmentConstants.h>
 #import <TCSegment/TCSegmentation.h>
-#import <TCCore/TCCore.h>
 
 @implementation TCAskSegmentation
 
@@ -21,8 +20,6 @@
     NSString *name = incomingNotification.name;
     if ([name isEqualToString: kTCNotification_SegmentAvailable])
     {
-        [[TCLogger sharedInstance] logMessage: [NSString stringWithFormat: @"Got notification : %@", name] withLevel: TCLogLevel_Error];
-
         NSArray *segment = incomingNotification.userInfo[kTCUserInfo_SegmentKey];
 
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
